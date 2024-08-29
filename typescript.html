@@ -37,25 +37,44 @@
             </div>
             <div class="content-box">
                 <h2>Sintaxis</h2>
+
                 <p>
                 <h5>1. PUNTO Y COMA (;)</h5>
                 Uso: En TypeScript, el punto y coma es opcional al final de una declaración, pero se recomienda
-                usarlo para evitar errores inesperados.
-                </p>
+                usarlo para evitar errores inesperados.</p>
                 <pre><code>let nombre: string = "Juan";</code></pre>
 
                 <p>
                 <h5>2. ASIGNACIÓN (=)</h5>
-                uso: Se utiliza el símbolo = para asignar un valor a una variable.
-                </p>
+                uso: Se utiliza el símbolo = para asignar un valor a una variable.</p>
                 <pre><code>let edad: number = 30;</code></pre>
 
                 <p>
                 <h5>3. Declaración de Variables (let, const, var) </h5>
                 Uso: let y const son las formas modernas de declarar variables. let permite cambiar el valor, mientras
-                que const define una constante.
-                </p>
+                que const define una constante.</p>
                 <pre><code>let nombre: string = "Ana";<br>const pi: number = 3.1416;</code></pre>
+
+                <p>
+                <h5>4. Tipos (:)</h5>
+                Uso: Se usa para definir el tipo de una variable, parámetro o valor de retorno.</p>
+                <pre><code>let esActivo: boolean = true;<br>function sumar(a: number, b: number): number {<br>   return a + b;<br>}</code></pre>
+
+                <p>
+                <h5>5. Funciones (function)</h5>
+                Uso: Se utiliza la palabra clave function para definir una función. </p>
+                <pre><code>function saludar(nombre: string): string {<br>   return "Hola " + nombre;<br> }</code></pre>
+
+                <p>
+                <h5>6. Clases (class) y Modificadores de Acceso</h5>
+                Uso: class se usa para definir clases, y puedes usar modificadores como public, private, y protected
+                para controlar la visibilidad de los miembros de la clase </p>
+                <pre><code>class Persona {<br>   private nombre: string;<br>   edad: number;<br><br>   constructor(nombre: string, edad: number) {<br>   this.nombre = nombre;<br>   } <br><br>   public saludar(): string {<br>   return `Hola, mi nombre es ${this.nombre}`;<br>   } <br>}</code></pre>
+
+                <p>
+                <h5>7. Interfaces (interface)</h5>
+                Uso: interface se utiliza para definir la forma que debe tener un objeto.</p>
+                <pre><code><img class="imagen" src="7.png" alt=""></code></pre>
 
             </div>
         </section>
