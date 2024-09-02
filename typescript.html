@@ -76,6 +76,119 @@
                 Uso: interface se utiliza para definir la forma que debe tener un objeto.</p>
                 <pre><code><img class="imagen" src="7.png" alt=""></code></pre>
 
+                <p>
+                <h5>8. Enumeraciones (Enums)</h5>
+                Uso: enum permite definir un conjunto de valores con nombre</p>
+                <pre><code><img class="imagen" src="" alt=""></code></pre>
+
+                <p>
+                <h5>9. Tipos de Unión (Union Types)</h5>
+                Uso: Permiten que una variable pueda contener valores de diferentes tipos.</p>
+                <pre><code><img class="imagen" src="" alt=""></code></pre>
+
+                <p>
+                <h5>10. Generics</h5>
+                Uso: Permiten crear funciones, clases o interfaces que trabajen con múltiples tipos.</p>
+                <pre><code><img class="imagen" src="" alt=""></code></pre>
+
+                <p>
+                <h5>11. Comentarios</h5>
+                Uso: Los comentarios en TypeScript son los mismos que en JavaScript: <br>
+                -- Comentario de una línea: // <br>
+                -- Comentario de varias líneas: /* */ </p>
+                <pre><code><img class="imagen" src="" alt=""></code></pre>
+
+            </div>
+
+            <div class="content-box">
+                <h2>Definición de variables y tipos</h2>
+                <h3>Variables en TypeScript</h3>
+                <p>Las variables son contenedores para almacenar datos. En TypeScript, se declaran utilizando let,
+                    const, o var, aunque let y const son las formas recomendadas <br><br>
+                    <b>- let:</b> Se usa para declarar variables cuyo valor puede cambiar. <br>
+                    <b>- const:</b> Se usa para declarar constantes, es decir, variables cuyo valor no puede cambiar.
+                    <br>
+                    <b>- var:</b> Aunque es válido, su uso no es recomendable debido a su alcance de función y a
+                    problemas potenciales con el hoisting (se elevan al comienzo de su ámbito).
+                </p>
+                <h3>Tipos en TypeScript</h3>
+                <p>Los tipos en TypeScript son una característica que define la naturaleza de los datos que pueden
+                    almacenarse en las variables. Esto es crucial porque permite detectar errores en tiempo de
+                    compilación, mejorando la fiabilidad y mantenibilidad del código.
+                <h5>Tipos Primitivos:</h5>
+                <b>- boolean:</b> Representa valores lógicos, true o false. <br>
+                <b>- number:</b> Representa tanto números enteros como decimales. <br>
+                <b>- string:</b> Representa cadenas de texto. <br>
+                <b>- null y undefined:</b> Representan la ausencia de valor.
+                <h5>Tipos Complejos</h5>
+                <b>- array:</b> Una lista de elementos, todos del mismo tipo (por ejemplo, string[]). <br>
+                <b>- tuple:</b> Un array con un número fijo de elementos, cada uno con un tipo específico. <br>
+                <b>- enum:</b> Un conjunto de valores con nombre, como días de la semana. <br>
+                <b>- any:</b> Permite asignar cualquier tipo de valor, pero su uso debe ser limitado ya que elimina las
+                ventajas
+                del tipado estático. <br>
+                <b>- unknown:</b> Similar a any, pero requiere verificación de tipo antes de su uso, proporcionando más
+                seguridad. <br>
+                <b>- void:</b> Se utiliza para funciones que no retornan un valor. <br>
+                <b>- never:</b> Representa un valor que nunca ocurre, como en funciones que lanzan excepciones o tienen
+                bucles
+                infinitos. <br>
+                <b>- object:</b> Cualquier valor que no sea primitivo (no es number, string, boolean, symbol, null, o
+                undefined).
+                </p>
+                <h3>Relación entre Variables y Tipos</h3>
+                <p>Cuando declaras una variable en TypeScript, puedes (y es recomendable) especificar su tipo. Esto
+                    define qué tipo de datos puede almacenar la variable, previniendo errores y asegurando que el código
+                    se comporte de manera predecible.</p>
+                <pre><code>aca va un ejemplo</code></pre>
+            </div>
+
+            <div class="content-box">
+                <h2>Clases, métodos, interface y types</h2>
+                <h3>1. Clases</h3>
+                <p>En TypeScript, las clases son una forma de definir la estructura y el comportamiento de los objetos.
+                    Una clase encapsula datos (propiedades) y funciones (métodos) en un solo lugar. <br> <br>
+                    <b>- Propiedades:</b> Son variables que pertenecen a una clase. Pueden ser públicas, privadas o
+                    protegidas. <br>
+                    <b>- Métodos:</b> Son funciones definidas dentro de una clase que operan sobre las propiedades de la
+                    clase.
+                </p>
+                <pre><code>Aca va un ejemplo</code></pre>
+
+                <h3>2. Métodos</h3>
+                <p>Los métodos son funciones definidas dentro de una clase. Pueden acceder a las propiedades de la clase
+                    y manipularlas. Los métodos pueden ser públicos, privados o protegidos, lo que determina su
+                    accesibilidad desde fuera de la clase. <br> <br>
+                    <b>- Public:</b> Accesible desde cualquier lugar. <br>
+                    <b>- Private:</b> Solo accesible desde dentro de la clase. <br>
+                    <b>- Protected:</b> Accesible desde la clase y las subclases.
+                </p>
+                <pre><code>Aca va un ejemplo</code></pre>
+
+                <h3>3. Interfaces </h3>
+                <p>Las interfaces en TypeScript definen la forma que debe tener un objeto. No implementan ningún
+                    comportamiento, pero sí describen las propiedades y métodos que un objeto debe tener. <br> <br>
+                    <b>- Interfaces para objetos:</b>Definen cómo deben lucir los objetos. <br>
+                    <b>- Interfaces para clases:</b>Definen qué métodos y propiedades debe implementar una clase.
+                </p>
+                <pre><code>Aca va un ejemplo</code></pre>
+
+                <h3>4. Types</h3>
+                <p>Type en TypeScript permite definir alias o combinaciones de tipos. A diferencia de las interfaces,
+                    type puede representar un tipo más complejo, como un conjunto de tipos (unión o intersección) o
+                    tipos básicos. <br> <br>
+                    <b>- Alias de tipos:</b> Un alias es una forma de dar un nombre a un tipo complejo. <br>
+                    <b>- Uniones (|) y intersecciones (&):</b> Permiten combinar varios tipos en uno solo.
+                </p>
+                <pre><code>Aca va un ejemplo</code></pre>
+            </div>
+
+            <div class="content-box">
+                <h2>Ciclos, condicionales</h2>
+            </div>
+
+            <div class="content-box">
+                <h2>Arrays y listas</h2>
             </div>
         </section>
     </div>

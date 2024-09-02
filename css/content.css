@@ -78,3 +78,48 @@ pre {
 .imagen{
     width: 170px;
 }
+
+@media screen and (max-width: 649px) {
+    .main-container {
+        flex-direction: column; /* Cambia la disposición a una columna */
+    }
+
+    .sidebar {
+        width: 100%; /* Ancho completo para la barra lateral */
+        border-right: none; /* Elimina la línea azul derecha */
+        border-bottom: none; /* Elimina la línea azul inferior */
+        text-align: center; /* Centra el texto de la barra lateral */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed; /* Fija la barra lateral en la parte inferior */
+        bottom: 0; /* Alinea la barra lateral al fondo */
+        left: 0;
+        right: 0;
+        background-color: #333; /* Fondo oscuro */
+        padding: 10px 0;
+        z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+    }
+
+   
+    .content {
+        padding: 10px; /* Reduce el padding del contenido */
+        text-align: center; /* Centra el contenido */
+        margin-bottom: 60px; /* Añade un margen para que el contenido no quede oculto detrás del menú */
+    }
+
+    .content-title {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+
+    .content-box {
+        padding: 15px; /* Reduce el padding de los cuadros de contenido */
+        margin-bottom: 15px; /* Reduce el margen entre los cuadros de contenido */
+    }
+
+    .imagen {
+        width: 100%; /* Haz que las imágenes ocupen todo el ancho del contenedor */
+        max-width: 170px; /* Asegura que las imágenes no sean más grandes que un límite específico */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+}
