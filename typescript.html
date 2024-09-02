@@ -12,16 +12,12 @@
 <body class="body">
     <header class="header">APP HIBIRIDA</header>
     <div class="main-container">
-        <aside class="sidebar">
-            <nav class="menu-nav">
-                <ul>
-                    <li><a href="index.html" class="menu-item">Menú</a></li>
-                    <li><a href="typescript.html" class="menu-item active">Typescript</a></li>
-                    <li><a href="angular.html" class="menu-item">Angular</a></li>
-                    <li><a href="ionic.html" class="menu-item">Ionic</a></li>
-                </ul>
-            </nav>
-        </aside>
+        <nav class="menu-nav">
+            <div class="button" id="home-button"><img src="iconos/home.svg" alt=""></div>
+            <div class="button" id="typescript-button">Typescript</div>
+            <div class="button" id="angular-button">Angular</div>
+            <div class="button" id="ionic-button">Ionic</div>
+        </nav>
         <section class="content">
             <h1 class="content-title">TYPESCRIPT</h1>
             <div class="content-box">
@@ -38,14 +34,15 @@
             <div class="content-box">
                 <h2>Sintaxis</h2>
 
-                <p>
+
                 <h5>1. PUNTO Y COMA (;)</h5>
-                Uso: En TypeScript, el punto y coma es opcional al final de una declaración, pero se recomienda
-                usarlo para evitar errores inesperados.</p>
+                <p>
+                    Uso: En TypeScript, el punto y coma es opcional al final de una declaración, pero se recomienda
+                    usarlo para evitar errores inesperados.</p>
                 <pre><code>let nombre: string = "Juan";</code></pre>
 
-                <p>
-                <h5>2. ASIGNACIÓN (=)</h5>
+                
+                <h5>2. ASIGNACIÓN (=)</h5><p>
                 uso: Se utiliza el símbolo = para asignar un valor a una variable.</p>
                 <pre><code>let edad: number = 30;</code></pre>
 
@@ -74,7 +71,7 @@
                 <p>
                 <h5>7. Interfaces (interface)</h5>
                 Uso: interface se utiliza para definir la forma que debe tener un objeto.</p>
-                <pre><code><img class="imagen" src="7.png" alt=""></code></pre>
+                <pre><code><img class="imagen" src="" alt=""></code></pre>
 
                 <p>
                 <h5>8. Enumeraciones (Enums)</h5>
@@ -189,10 +186,12 @@
 
             <div class="content-box">
                 <h2>Arrays y listas</h2>
+                
             </div>
         </section>
     </div>
     <footer class="footer">2024</footer>
-</body>
+    <script src="js/index.js"></script>
+
 
 </html>

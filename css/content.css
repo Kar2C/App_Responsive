@@ -1,125 +1,91 @@
-/* content.css */
 .main-container {
     display: flex;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #222; /* Fondo oscuro */
-}
-
-.sidebar {
-    width: 100px; /* Ancho de la barra lateral */
-    background-color: #333; /* Fondo más oscuro */
+    flex-direction: column;
+    min-height: calc(100vh - 10rem);
     padding: 20px;
-    border-right: 2px solid #007BFF; /* Línea azul */
 }
 
-.menu-nav ul {
-    list-style-type: none;
-    padding: 0;
+.menu-nav {
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+    border-top: 2px solid #007BFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
-.menu-item {
-    display: block;
-    color: #ffffff; /* Texto blanco */
+.button {
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px 0;
-    border-bottom: 1px solid #444; /* Línea gris */
-    transition: background-color 0.3s;
-}
-
-.menu-item:hover {
-    background-color: #444; /* Hover gris más claro */
-}
-
-.menu-item.active {
-    color: #007BFF; /* Texto azul para la página activa */
-    font-weight: bold;
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-    background-color: #2b2b2b; /* Fondo del contenido */
-    color: #ffffff; /* Texto blanco */
+    transition: color 0.3s ease
 }
 
 .content-title {
     text-align: center;
-    color: #ffffff; /* Título en blanco */
-    margin-bottom: 20px;
-    font-size: 2rem;
+    color: #ffffff;
+    font-size: 1.7rem;
 }
 
 .content-box {
-    background-color: #333; /* Fondo oscuro para los cuadros */
+    background-color: #444;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    border: 1px solid #444; /* Borde gris */
+    border: 1px solid #555;
 }
 
-.content-box h2 {
-    color: #ffffff; /* Texto blanco */
-    margin-bottom: 10px;
+h2 {
+    text-align: center;
+    font: 2rem;
 }
 
-.content-box p {
-    color: #cccccc; /* Texto gris claro */
+p {
+    font-size: 20px;
 }
 
 pre {
-    background-color: #000; /* Fondo negro para el código */
-    color: #0f0; /* Texto verde */
+    background-color: #000;
+    color: #0f0;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
 }
-.imagen{
-    width: 170px;
+
+img{
+    height: 50px;
 }
 
-@media screen and (max-width: 649px) {
-    .main-container {
-        flex-direction: column; /* Cambia la disposición a una columna */
-    }
+@media (min-width: 650px) {
 
-    .sidebar {
-        width: 100%; /* Ancho completo para la barra lateral */
-        border-right: none; /* Elimina la línea azul derecha */
-        border-bottom: none; /* Elimina la línea azul inferior */
-        text-align: center; /* Centra el texto de la barra lateral */
+    .main-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        position: fixed; /* Fija la barra lateral en la parte inferior */
-        bottom: 0; /* Alinea la barra lateral al fondo */
+        padding: 0;
+    }
+
+    .menu-nav {
+        width: 700px;
+        height: auto;
+        flex-direction: column;
+        top: 0;
         left: 0;
-        right: 0;
-        background-color: #333; /* Fondo oscuro */
-        padding: 10px 0;
-        z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+        padding-top: 2rem;
+        display: block;
+        position: relative;
     }
 
-   
     .content {
-        padding: 10px; /* Reduce el padding del contenido */
-        text-align: center; /* Centra el contenido */
-        margin-bottom: 60px; /* Añade un margen para que el contenido no quede oculto detrás del menú */
+        margin-left: 24px;
     }
 
-    .content-title {
-        font-size: 1.5rem; /* Reduce el tamaño del título */
-    }
-
-    .content-box {
-        padding: 15px; /* Reduce el padding de los cuadros de contenido */
-        margin-bottom: 15px; /* Reduce el margen entre los cuadros de contenido */
-    }
-
-    .imagen {
-        width: 100%; /* Haz que las imágenes ocupen todo el ancho del contenedor */
-        max-width: 170px; /* Asegura que las imágenes no sean más grandes que un límite específico */
-        margin: 0 auto; /* Centra las imágenes */
+    .button {
+        width: 90%;
+        margin-bottom: 1rem;
+        margin-left: 7px;
     }
 }

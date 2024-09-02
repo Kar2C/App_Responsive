@@ -10,4 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('ionic-button').addEventListener('click', function() {
         window.location.href = 'ionic.html'; // Ruta a la página de Ionic
     });
+
+    document.getElementById('home-button').addEventListener('click', function() {
+        window.location.href = 'index.html'; // Ruta a la página de index
+    });
 });

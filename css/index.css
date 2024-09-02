@@ -62,33 +62,3 @@
 .button:hover {
     background-color: #444; /* Cambio a un gris más claro */
 }
-
-/* Estilos para tablets y superiores (pantallas de 650px en adelante) */
-@media (min-width: 650px) {
-    .button {
-        width: 300px; /* Ajusta el ancho del botón para tablets */
-        font-size: 1.5rem;
-    }
-
-    .menu {
-        font-size: 2rem; /* Ajuste del tamaño de texto */
-    }
-}
-
-/* Estilos para celulares (pantallas menores a 650px) */
-@media (max-width: 649px) {
-    .header, .footer {
-        font-size: 20px; /* Ajuste del tamaño del texto */
-        padding: 10px 0;
-    }
-
-    .menu {
-        font-size: 1.2rem; /* Tamaño de texto más pequeño para móviles */
-    }
-
-    .button {
-        width: 150px; /* Ancho del botón para móviles */
-        font-size: 1rem;
-        height: 40px;
-    }
-}
