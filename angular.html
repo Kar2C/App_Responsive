@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular - App Híbrida</title>
-    <link rel="stylesheet" href="css/index.css"> <!-- Mantén el CSS general -->
-    <link rel="stylesheet" href="css/content.css"> <!-- Nuevo CSS para el contenido -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/content.css">
 </head>
 
 <body class="body">
@@ -22,11 +22,100 @@
         <section class="content">
             <h1 class="content-title">ANGULAR</h1>
             <div class="content-box">
-                <h2>............</h2>
-                <p>.............
+                <h2>¿Qué es?</h2>
+                <p>
+                    Angular es una plataforma de desarrollo basada en TypeScript que
+                    permite crear aplicaciones web escalables mediante un marco de
+                    componentes. Incluye bibliotecas integradas para funciones como
+                    enrutamiento y administración de formularios, además de herramientas
+                    para desarrollar, probar y actualizar código. Angular es adecuado
+                    para proyectos desde pequeños hasta aplicaciones empresariales, y
+                    cuenta con una comunidad de más de 1,7 millones de desarrolladores y
+                    creadores de contenido.
                 </p>
             </div>
 
+            <div class="content-box">
+                <h2>Características</h2>
+                <p>
+                    Angular es un framework de desarrollo web que ofrece: <br /><br />
+
+                    <b>1. Arquitectura basada en componentes:</b> Para crear
+                    aplicaciones modulares y reutilizables. <br /><br />
+                    <b>2. TypeScript:</b> Como lenguaje base, con tipado estático y
+                    estructura.<br /><br />
+                    <b>3. Data binding bidireccional:</b> Para sincronizar datos entre
+                    la vista y el modelo.<br /><br />
+                    <b>4. Enrutamiento:</b> Para gestionar la navegación en aplicaciones
+                    de una sola página (SPA).<br /><br />
+                    <b>5. Inyección de dependencias:</b> Para modularidad y
+                    escalabilidad.<br /><br />
+                    <b>6. CLI:</b> Para automatizar tareas como la creación y
+                    configuración de proyectos.<br /><br />
+                    <b>7. Soporte de formularios:</b> Reactivos y basados en
+                    plantillas.<br /><br />
+                    <b>8. Cliente HTTP:</b> Integrado para comunicación con APIs.<br /><br />
+                    <b>9. Pruebas integradas:</b> Para facilitar el desarrollo basado en
+                    pruebas.<br /><br />
+                </p>
+            </div>
+
+            <div class="content-box">
+                <h2>Configuración</h2>
+                <p>
+                    Para crear, construir y servir un nuevo proyecto Angular básico, usa
+                    los siguientes comandos en la línea de comandos: <br /><br />
+
+                    <b>1.</b> Ejecuta ng new my-first-project para crear un nuevo
+                    proyecto en una carpeta llamada "my-first-project". <br /><br />
+                    <b>2.</b> Navega a esa carpeta con cd my-first-project.<br /><br />
+                    <b>3.</b> Usa ng serve para ejecutar la aplicación en un servidor
+                    de desarrollo.<br /><br />
+                    <br />
+
+                    Luego, abre "http://localhost:4200/" en tu navegador para ver la
+                    aplicación en funcionamiento. El servidor recargará automáticamente
+                    la página cuando modifiques los archivos de origen. Asegúrate de
+                    tener permisos suficientes en el directorio de trabajo actual antes
+                    de crear el proyecto.
+                </p>
+            </div>
+
+            <div class="content-box">
+                <h2>Signal</h2>
+                <p>
+                    En Angular, un signal es un mecanismo para manejar la reactividad
+                    del estado en la aplicación. Representa un valor que cambia con el
+                    tiempo y automáticamente actualiza cualquier parte de la aplicación
+                    que dependa de ese valor, simplificando la gestión del estado y
+                    mejorando la reactividad del código.
+                </p>
+
+                <h3>1. Writable Signal:</h3>
+                <p>
+                    Un Signal que puedes actualizar manualmente.
+                <pre><code>const count = signal(0); // Crea un signal con valor inicial 0<br>count.set(5); // Actualiza el valor del signal a 5</code></pre>
+                </p>
+
+                <h3>2. Computed Signal:</h3>
+                <p>
+                    Un Signal cuyo valor depende de otros Signals y se actualiza automáticamente
+                <pre><code>const count = signal(0);<br>const doubleCount = computed(() => count() * 2); // Calcula el doble de count</code></pre>
+                </p>
+
+                <h3>3. Effect:</h3>
+                <p>
+                    Una función que se ejecuta automáticamente cuando los Signals que usa cambian.
+                <pre><code>const count = signal(0);<br>effect(() => {<br>  console.log('Count changed:', count()); // Imprime el nuevo valor de count<br>});</code></pre>
+                </p>
+
+                <h3>4. Signal Arrays and Objects:</h3>
+                <p>
+                    Signals pueden contener estructuras complejas como arrays y objetos.
+                <pre><code>const user = signal({ name: 'Alice', age: 25 });<br>user.mutate(u => u.age += 1); // Actualiza la edad del usuario</code></pre>
+                </p>
+
+            </div>
         </section>
     </div>
     <footer class="footer">2024</footer>

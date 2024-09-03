@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 10rem);
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .menu-nav {
@@ -13,16 +13,22 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #333;
-    border-top: 2px solid #007BFF;
+    border-top: 0.125rem solid #007BFF;
     position: fixed;
     left: 0;
     bottom: 0;
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.25rem;
+    height: 3.5625rem;
+    border: 0.125rem solid #007BFF;
+    border-radius: 0.625rem;
     color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease
+    font-size: 1.25rem;
 }
 
 .content-title {
@@ -33,31 +39,32 @@
 
 .content-box {
     background-color: #444;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 1px solid #555;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.625rem;
+    border: 0.0625rem solid #555;
 }
 
 h2 {
     text-align: center;
-    font: 2rem;
+    font-size: 2rem;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 pre {
     background-color: #000;
     color: #0f0;
-    padding: 10px;
-    border-radius: 5px;
+    padding:  0.625rem;
+    border-radius: 0.3125rem;
     overflow-x: auto;
+    font-size: 1.1rem;
 }
 
-img{
-    height: 50px;
+img {
+    height: 3.125rem;
 }
 
 @media (min-width: 650px) {
@@ -69,7 +76,7 @@ img{
     }
 
     .menu-nav {
-        width: 700px;
+        width: 53.125rem;
         height: auto;
         flex-direction: column;
         top: 0;
@@ -77,15 +84,19 @@ img{
         padding-top: 2rem;
         display: block;
         position: relative;
+        border-top: none;
+        border-right: 0.125rem solid #007BFF;
     }
 
     .content {
-        margin-left: 24px;
+        margin-left: 1.5rem;
     }
 
     .button {
-        width: 90%;
-        margin-bottom: 1rem;
-        margin-left: 7px;
+        width: auto;
+        margin-bottom: 1.2rem;
+        margin-left: 1.0625rem;
+        margin-right: 1.0625rem;
     }
+
 }

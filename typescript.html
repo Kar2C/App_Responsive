@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TypeScript - App Híbrida</title>
-    <link rel="stylesheet" href="css/index.css"> <!-- Mantén el CSS general -->
-    <link rel="stylesheet" href="css/content.css"> <!-- Nuevo CSS para el contenido -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/content.css"> 
 </head>
 
 <body class="body">
@@ -22,7 +22,8 @@
             <h1 class="content-title">TYPESCRIPT</h1>
             <div class="content-box">
                 <h2>¿Qué es?</h2>
-                <p>TypeScript es un superconjunto de JavaScript que añade tipado estático opcional y funciones
+                <p>
+                    TypeScript es un superconjunto de JavaScript que añade tipado estático opcional y funciones
                     avanzadas. Esto significa que comparte la misma base sintáctica que JavaScript, pero permite a los
                     desarrolladores definir tipos de datos, lo que ayuda a evitar errores comunes. TypeScript,
                     desarrollado por Microsoft y lanzado en 2012, se ha vuelto popular por facilitar la detección de
@@ -34,73 +35,85 @@
             <div class="content-box">
                 <h2>Sintaxis</h2>
 
-
-                <h5>1. PUNTO Y COMA (;)</h5>
+                <h3>1. Punto y coma (;)</h3>
                 <p>
-                    Uso: En TypeScript, el punto y coma es opcional al final de una declaración, pero se recomienda
-                    usarlo para evitar errores inesperados.</p>
+                    <b>Uso:</b> En TypeScript, el punto y coma es opcional al final de una declaración, pero se recomienda
+                    usarlo para evitar errores inesperados.
                 <pre><code>let nombre: string = "Juan";</code></pre>
+                </p>
 
-                
-                <h5>2. ASIGNACIÓN (=)</h5><p>
-                uso: Se utiliza el símbolo = para asignar un valor a una variable.</p>
+                <h3>2. Asignación (=)</h3>
+                <p>
+                    <b>Uso:</b> Se utiliza el símbolo = para asignar un valor a una variable.
                 <pre><code>let edad: number = 30;</code></pre>
+                </p>
 
+                <h3>3. Declaración de Variables (let, const, var) </h3>
                 <p>
-                <h5>3. Declaración de Variables (let, const, var) </h5>
-                Uso: let y const son las formas modernas de declarar variables. let permite cambiar el valor, mientras
-                que const define una constante.</p>
+                   <b>Uso:</b> let y const son las formas modernas de declarar variables. let permite cambiar el valor,
+                    mientras
+                    que const define una constante.
                 <pre><code>let nombre: string = "Ana";<br>const pi: number = 3.1416;</code></pre>
+                </p>
 
+                <h3>4. Tipos (:)</h3>
                 <p>
-                <h5>4. Tipos (:)</h5>
-                Uso: Se usa para definir el tipo de una variable, parámetro o valor de retorno.</p>
+                    <b>Uso:</b> Se usa para definir el tipo de una variable, parámetro o valor de retorno.
                 <pre><code>let esActivo: boolean = true;<br>function sumar(a: number, b: number): number {<br>   return a + b;<br>}</code></pre>
+                </p>
 
+                <h3>5. Funciones (function)</h3>
                 <p>
-                <h5>5. Funciones (function)</h5>
-                Uso: Se utiliza la palabra clave function para definir una función. </p>
+                    <b>Uso:</b> Se utiliza la palabra clave function para definir una función.
                 <pre><code>function saludar(nombre: string): string {<br>   return "Hola " + nombre;<br> }</code></pre>
+                </p>
 
+                <h3>6. Clases (class) y Modificadores de Acceso</h3>
                 <p>
-                <h5>6. Clases (class) y Modificadores de Acceso</h5>
-                Uso: class se usa para definir clases, y puedes usar modificadores como public, private, y protected
-                para controlar la visibilidad de los miembros de la clase </p>
-                <pre><code>class Persona {<br>   private nombre: string;<br>   edad: number;<br><br>   constructor(nombre: string, edad: number) {<br>   this.nombre = nombre;<br>   } <br><br>   public saludar(): string {<br>   return `Hola, mi nombre es ${this.nombre}`;<br>   } <br>}</code></pre>
+                    <b>Uso:</b> class se usa para definir clases, y puedes usar modificadores como public, private, y protected
+                    para controlar la visibilidad de los miembros de la clase
+                <pre><code>class Persona {<br>   private nombre: string;<br>   edad: number;<br><br>   constructor(nombre: string, edad: number) {<br>   this.nombre = nombre;<br>   } <br><br>   public saludar(): string {<br>   return Hola, mi nombre es ${this.nombre};<br>   } <br>}</code></pre>
+                </p>
 
+                <h3>7. Interfaces (interface)</h3>
                 <p>
-                <h5>7. Interfaces (interface)</h5>
-                Uso: interface se utiliza para definir la forma que debe tener un objeto.</p>
-                <pre><code><img class="imagen" src="" alt=""></code></pre>
+                    <b>Uso:</b> interface se utiliza para definir la forma que debe tener un objeto.
+                <pre><code>interface Coche {<br>   marca: string;<br>   modelo: string;<br>   año: number;<br>}<br><br>let miCoche: Coche = {<br>   marca: "Toyota",<br>   modelo: "Corolla",<br>   año: 2020<br>};</code></pre>
+                </p>
 
+                <h3>8. Enumeraciones (Enums)</h3>
                 <p>
-                <h5>8. Enumeraciones (Enums)</h5>
-                Uso: enum permite definir un conjunto de valores con nombre</p>
-                <pre><code><img class="imagen" src="" alt=""></code></pre>
+                    <b>Uso:</b> enum permite definir un conjunto de valores con nombre
+                <pre><code>enum Direction {<br>   Up,<br>   Down,<br>   Left,<br>   Right<br>}<br><br>let dir: Direction = Direction.Up;</code></pre>
+                </p>
 
+                <h3>9. Tipos de Unión (Union Types)</h3>
                 <p>
-                <h5>9. Tipos de Unión (Union Types)</h5>
-                Uso: Permiten que una variable pueda contener valores de diferentes tipos.</p>
-                <pre><code><img class="imagen" src="" alt=""></code></pre>
+                   <b>Uso:</b> Permiten que una variable pueda contener valores de diferentes tipos.
+                <pre><code>let value: string | number;<br>value = "Hello";<br>value = 42;</code></pre>
+                </p>
 
+                <h3>10. Generics</h3>
                 <p>
-                <h5>10. Generics</h5>
-                Uso: Permiten crear funciones, clases o interfaces que trabajen con múltiples tipos.</p>
-                <pre><code><img class="imagen" src="" alt=""></code></pre>
+                    <b>Uso:</b> Permiten crear funciones, clases o interfaces que trabajen con múltiples tipos.
+                <pre><code>function identity&lt;T&gt;(arg: T): T {<br>  return arg;<br>}</code></pre>
+                </p>
 
+                <h3>11. Comentarios</h3>
                 <p>
-                <h5>11. Comentarios</h5>
-                Uso: Los comentarios en TypeScript son los mismos que en JavaScript: <br>
-                -- Comentario de una línea: // <br>
-                -- Comentario de varias líneas: /* */ </p>
-                <pre><code><img class="imagen" src="" alt=""></code></pre>
+                    <b>Uso:</b> Los comentarios en TypeScript son los mismos que en JavaScript: <br>
+                    -- Comentario de una línea: // <br>
+                    -- Comentario de varias líneas: /* */
+                <pre><code>// Esto es un comentario de una línea<br><br>/<br> Esto es un comentario<br> de varias líneas<br>/</code></pre>
+                </p>
 
             </div>
 
             <div class="content-box">
                 <h2>Definición de variables y tipos</h2>
                 <h3>Variables en TypeScript</h3>
-                <p>Las variables son contenedores para almacenar datos. En TypeScript, se declaran utilizando let,
+                <p>
+                    Las variables son contenedores para almacenar datos. En TypeScript, se declaran utilizando let,
                     const, o var, aunque let y const son las formas recomendadas <br><br>
                     <b>- let:</b> Se usa para declarar variables cuyo valor puede cambiar. <br>
                     <b>- const:</b> Se usa para declarar constantes, es decir, variables cuyo valor no puede cambiar.
@@ -108,85 +121,255 @@
                     <b>- var:</b> Aunque es válido, su uso no es recomendable debido a su alcance de función y a
                     problemas potenciales con el hoisting (se elevan al comienzo de su ámbito).
                 </p>
+
                 <h3>Tipos en TypeScript</h3>
-                <p>Los tipos en TypeScript son una característica que define la naturaleza de los datos que pueden
+                <p>
+                    Los tipos en TypeScript son una característica que define la naturaleza de los datos que pueden
                     almacenarse en las variables. Esto es crucial porque permite detectar errores en tiempo de
                     compilación, mejorando la fiabilidad y mantenibilidad del código.
-                <h5>Tipos Primitivos:</h5>
-                <b>- boolean:</b> Representa valores lógicos, true o false. <br>
-                <b>- number:</b> Representa tanto números enteros como decimales. <br>
-                <b>- string:</b> Representa cadenas de texto. <br>
-                <b>- null y undefined:</b> Representan la ausencia de valor.
-                <h5>Tipos Complejos</h5>
-                <b>- array:</b> Una lista de elementos, todos del mismo tipo (por ejemplo, string[]). <br>
-                <b>- tuple:</b> Un array con un número fijo de elementos, cada uno con un tipo específico. <br>
-                <b>- enum:</b> Un conjunto de valores con nombre, como días de la semana. <br>
-                <b>- any:</b> Permite asignar cualquier tipo de valor, pero su uso debe ser limitado ya que elimina las
-                ventajas
-                del tipado estático. <br>
-                <b>- unknown:</b> Similar a any, pero requiere verificación de tipo antes de su uso, proporcionando más
-                seguridad. <br>
-                <b>- void:</b> Se utiliza para funciones que no retornan un valor. <br>
-                <b>- never:</b> Representa un valor que nunca ocurre, como en funciones que lanzan excepciones o tienen
-                bucles
-                infinitos. <br>
-                <b>- object:</b> Cualquier valor que no sea primitivo (no es number, string, boolean, symbol, null, o
-                undefined).
                 </p>
+
+                <h4>Tipos Primitivos:</h4>
+                <p>
+                    <b>- boolean:</b> Representa valores lógicos, true o false. <br>
+                    <b>- number:</b> Representa tanto números enteros como decimales. <br>
+                    <b>- string:</b> Representa cadenas de texto. <br>
+                    <b>- null y undefined:</b> Representan la ausencia de valor.
+                </p>
+
+                <h4>Tipos Complejos</h4>
+                <p>
+                    <b>- array:</b> Una lista de elementos, todos del mismo tipo (por ejemplo, string[]). <br>
+                    <b>- tuple:</b> Un array con un número fijo de elementos, cada uno con un tipo específico. <br>
+                    <b>- enum:</b> Un conjunto de valores con nombre, como días de la semana. <br>
+                    <b>- any:</b> Permite asignar cualquier tipo de valor, pero su uso debe ser limitado ya que elimina
+                    las
+                    ventajas
+                    del tipado estático. <br>
+                    <b>- unknown:</b> Similar a any, pero requiere verificación de tipo antes de su uso, proporcionando
+                    más
+                    seguridad. <br>
+                    <b>- void:</b> Se utiliza para funciones que no retornan un valor. <br>
+                    <b>- never:</b> Representa un valor que nunca ocurre, como en funciones que lanzan excepciones o
+                    tienen
+                    bucles infinitos. <br>
+                    <b>- object:</b> Cualquier valor que no sea primitivo (no es number, string, boolean, symbol, null,
+                    o
+                    undefined).
+                </p>
+
                 <h3>Relación entre Variables y Tipos</h3>
-                <p>Cuando declaras una variable en TypeScript, puedes (y es recomendable) especificar su tipo. Esto
+                <p>
+                    Cuando declaras una variable en TypeScript, puedes (y es recomendable) especificar su tipo. Esto
                     define qué tipo de datos puede almacenar la variable, previniendo errores y asegurando que el código
-                    se comporte de manera predecible.</p>
-                <pre><code>aca va un ejemplo</code></pre>
+                    se comporte de manera predecible.
+                <pre><code>let nombre: string = "Juan";  // 'nombre' es una variable de tipo string<br>let edad: number = 25;        // 'edad' es una variable de tipo number<br>const esEstudiante: boolean = true;  // 'esEstudiante' es una constante de tipo boolean</code></pre>
+                </p>
+
             </div>
 
             <div class="content-box">
                 <h2>Clases, métodos, interface y types</h2>
                 <h3>1. Clases</h3>
-                <p>En TypeScript, las clases son una forma de definir la estructura y el comportamiento de los objetos.
+                <p>
+                    En TypeScript, las clases son una forma de definir la estructura y el comportamiento de los objetos.
                     Una clase encapsula datos (propiedades) y funciones (métodos) en un solo lugar. <br> <br>
                     <b>- Propiedades:</b> Son variables que pertenecen a una clase. Pueden ser públicas, privadas o
                     protegidas. <br>
                     <b>- Métodos:</b> Son funciones definidas dentro de una clase que operan sobre las propiedades de la
                     clase.
+                <pre><code>class Persona {<br>    nombre: string;<br>    edad: number;<br><br>    constructor(nombre: string, edad: number) {<br>        this.nombre = nombre;<br>        this.edad = edad;<br>    }<br><br>    saludar(): string {<br>        return Hola, mi nombre es ${this.nombre};<br>    }<br>}<br><br>let persona1 = new Persona("Ana", 30);<br>console.log(persona1.saludar());  // "Hola, mi nombre es Ana"</code></pre>
                 </p>
-                <pre><code>Aca va un ejemplo</code></pre>
 
                 <h3>2. Métodos</h3>
-                <p>Los métodos son funciones definidas dentro de una clase. Pueden acceder a las propiedades de la clase
+                <p>
+                    Los métodos son funciones definidas dentro de una clase. Pueden acceder a las propiedades de la
+                    clase
                     y manipularlas. Los métodos pueden ser públicos, privados o protegidos, lo que determina su
                     accesibilidad desde fuera de la clase. <br> <br>
                     <b>- Public:</b> Accesible desde cualquier lugar. <br>
                     <b>- Private:</b> Solo accesible desde dentro de la clase. <br>
                     <b>- Protected:</b> Accesible desde la clase y las subclases.
+                <pre><code>class Banco {<br>    private saldo: number = 1000;<br><br>    private calcularInteres(): number {<br>        return this.saldo * 0.05;<br>    }<br><br>    public obtenerSaldoConInteres(): number {<br>        return this.saldo + this.calcularInteres();<br>    }<br>}<br><br>let cuenta = new Banco();<br>console.log(cuenta.obtenerSaldoConInteres()); // 1050</code></pre>
                 </p>
-                <pre><code>Aca va un ejemplo</code></pre>
 
                 <h3>3. Interfaces </h3>
-                <p>Las interfaces en TypeScript definen la forma que debe tener un objeto. No implementan ningún
+                <p>
+                    Las interfaces en TypeScript definen la forma que debe tener un objeto. No implementan ningún
                     comportamiento, pero sí describen las propiedades y métodos que un objeto debe tener. <br> <br>
-                    <b>- Interfaces para objetos:</b>Definen cómo deben lucir los objetos. <br>
-                    <b>- Interfaces para clases:</b>Definen qué métodos y propiedades debe implementar una clase.
+                    <b>- Interfaces para objetos:</b> Definen cómo deben lucir los objetos. <br>
+                    <b>- Interfaces para clases:</b> Definen qué métodos y propiedades debe implementar una clase.
+                <pre><code>interface Coche {<br>    marca: string;<br>    modelo: string;<br>    año: number;<br>}<br><br>let miCoche: Coche = {<br>    marca: "Toyota",<br>    modelo: "Corolla",<br>    año: 2020<br>};</code></pre>
                 </p>
-                <pre><code>Aca va un ejemplo</code></pre>
 
                 <h3>4. Types</h3>
-                <p>Type en TypeScript permite definir alias o combinaciones de tipos. A diferencia de las interfaces,
+                <p>
+                    Type en TypeScript permite definir alias o combinaciones de tipos. A diferencia de las interfaces,
                     type puede representar un tipo más complejo, como un conjunto de tipos (unión o intersección) o
                     tipos básicos. <br> <br>
                     <b>- Alias de tipos:</b> Un alias es una forma de dar un nombre a un tipo complejo. <br>
                     <b>- Uniones (|) y intersecciones (&):</b> Permiten combinar varios tipos en uno solo.
+                <pre><code>type ID = string | number;<br><br>let userID: ID = "12345";  // Puede ser string o number<br><br>type PersonaCompleta = {<br>    nombre: string;<br>    edad: number;<br>} & {<br>    direccion: string;<br>};<br><br>let persona: PersonaCompleta = {<br>    nombre: "Ana",<br>    edad: 30,<br>    direccion: "Calle Falsa 123"<br>};</code></pre>
                 </p>
-                <pre><code>Aca va un ejemplo</code></pre>
+
             </div>
 
             <div class="content-box">
                 <h2>Ciclos, condicionales</h2>
+
+                <h3>1. Condicionales</h3>
+                <p>
+                    Las estructuras condicionales permiten ejecutar diferentes bloques de código según ciertas
+                    condiciones <br><br>
+                    <b>- if...else:</b> Permite ejecutar un bloque de código si una condición es verdadera, y
+                    opcionalmente otro bloque si la condición es falsa.
+                <pre><code>let edad: number = 18;<br><br>if (edad >= 18) {<br>    console.log("Eres mayor de edad.");<br>} else {<br>    console.log("Eres menor de edad.");<br>}</code></pre>
+                </p>
+
+                <p>
+                    <b>- else if:</b> Se utiliza para probar múltiples condiciones diferentes.
+                <pre><code>let nota: number = 85;<br><br>if (nota >= 90) {<br>    console.log("Sobresaliente");<br>} else if (nota >= 80) {<br>    console.log("Notable");<br>} else if (nota >= 70) {<br>    console.log("Aprobado");<br>} else {<br>    console.log("Suspenso");<br>}</code></pre>
+                </p>
+
+                <p>
+                    <b>- switch:</b> Se utiliza para ejecutar uno de varios bloques de código basado en el valor de una
+                    variable o expresión.
+                <pre><code>let dia: number = 3;<br><br>switch (dia) {<br>    case 1:<br>        console.log("Lunes");<br>        break;<br>    case 2:<br>        console.log("Martes");<br>        break;<br>    case 3:<br>        console.log("Miércoles");<br>        break;<br>    default:<br>        console.log("Día no válido");<br>}</code></pre>
+                </p>
+
+                <h3>2. Ciclos</h3>
+                <p>
+                    Los ciclos permiten repetir un bloque de código mientras una condición es verdadera. <br><br>
+                    <b>- for:</b> Se utiliza para repetir un bloque de código un número específico de veces.
+                <pre><code>for (let i: number = 0; i &lt; 5; i++) {<br>    console.log(Número: ${i});<br>}</code></pre>
+                </p>
+
+                <p>
+                    <b>- while:</b> Repite un bloque de código mientras una condición sea verdadera.
+                <pre><code>let contador: number = 0;<br><br>while (contador &lt; 5) {<br>    console.log(Contador: ${contador});<br>    contador++;<br>}</code></pre>
+                </p>
+
+                <p>
+                    <b>- do...while:</b> Similar a while, pero siempre ejecuta el bloque de código al menos una vez
+                    antes de evaluar la condición.
+                <pre><code>let numero: number = 0;<br><br>do {<br>    console.log(Número: ${numero});<br>    numero++;<br>} while (numero &lt; 5);</code></pre>
+                </p>
+
+                <p>
+                    <b>- for...of:</b> Se utiliza para iterar sobre elementos de una colección como un array.
+                <pre><code>let nombres: string[] = ["Ana", "Juan", "María"];<br><br>for (let nombre of nombres) {<br>    console.log(nombre);<br>}</code></pre>
+                </p>
+
+                <p>
+                    <b>- for...in:</b> Se utiliza para iterar sobre las propiedades de un objeto.
+                <pre><code>let persona = { nombre: "Ana", edad: 30 };<br><br>for (let key in persona) {<br>    console.log(${key}: ${persona[key]});<br>}</code></pre>
+
+                </p>
+
             </div>
 
             <div class="content-box">
                 <h2>Arrays y listas</h2>
-                
+                <p>
+                    En TypeScript, un array es una estructura de datos que almacena una colección ordenada de elementos
+                    del mismo tipo.
+                    Aunque no hay una diferencia fundamental entre "arrays" y "listas" en TypeScript (ambos se refieren
+                    al tipo Array), el término "array" es el más común.
+                </p>
+
+                <h3>1. Sintaxis de corchetes:</h3>
+                <p>
+                    Puedes declarar un array utilizando corchetes [] para especificar el tipo de los elementos.
+                <pre><code>let numeros: number[] = [1, 2, 3, 4, 5];</code></pre>
+                </p>
+
+                <h3>2. Usando la clase Array:</h3>
+                <p>
+                    Otra forma de declarar un array es utilizando la clase 'Array<T>'.
+                        <pre><code>let nombres: Array&lt;string&gt; = ["Ana", "Juan", "María"];</code></pre>
+                </p>
+            </div>
+
+            <div class="content-box">
+                <h2>Metodos</h2>
+                <p>
+                    TypeScript ofrece una amplia gama de métodos para manipular y trabajar con arrays. A continuación,
+                    se presentan algunos de los métodos más comunes:
+                </p>
+
+                <h3>1. push()</h3>
+                <p>
+                    Agrega uno o más elementos al final del array y devuelve la nueva longitud del array.
+                <pre><code>numeros.push(6); // [1, 2, 3, 4, 5, 6]</code></pre>
+                </p>
+
+                <h3>2. pop()</h3>
+                <p>
+                    Elimina el último elemento del array y lo devuelve.
+                <pre><code>let ultimoNumero = numeros.pop(); // [1, 2, 3, 4, 5]</code></pre>
+                </p>
+
+                <h3>3. shift()</h3>
+                <p>
+                    Elimina el primer elemento del array y lo devuelve.
+                <pre><code>let primerNumero = numeros.shift(); // [2, 3, 4, 5]</code></pre>
+                </p>
+
+                <h3>4. unshift()</h3>
+                <p>
+                    Agrega uno o más elementos al principio del array y devuelve la nueva longitud del array.
+                <pre><code>numeros.unshift(0); // [0, 2, 3, 4, 5]</code></pre>
+                </p>
+
+                <h3>5. forEach()</h3>
+                <p>
+                    Ejecuta una función para cada elemento del array.
+                <pre><code>nombres.forEach((nombre) => {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(nombre);<br>});</code></pre>
+                </p>
+
+                <h3>6. map()</h3>
+                <p>
+                    Crea un nuevo array con los resultados de aplicar una función a cada elemento del array original.
+                <pre><code>let numerosMultiplicados = numeros.map((numero) => numero * 2); // [0, 4, 6, 8, 10]</code></pre>
+                </p>
+
+                <h3>7. filter()</h3>
+                <p>
+                    Crea un nuevo array con todos los elementos que cumplan una condición.
+                <pre><code>let numerosPares = numeros.filter((numero) => numero % 2 === 0); // [0, 2, 4]</code></pre>
+                </p>
+
+                <h3>8. reduce()</h3>
+                <p>
+                    Devuelve el primer elemento del array que cumpla una condición.
+                <pre><code>let sumaTotal = numeros.reduce((acumulador, numero) => acumulador + numero, 0); // 14</code></pre>
+                </p>
+
+                <h3>10. includes()</h3>
+                <p>
+                    Determina si un array incluye un determinado elemento, devolviendo true o false.
+                <pre><code>let existeCuatro = numeros.includes(4); // true</code></pre>
+                </p>
+
+                <h3>11. indexOf()</h3>
+                <p>
+                    Devuelve el primer índice en el que se puede encontrar un elemento dado en el array, o -1 si el
+                    elemento no está presente.
+                <pre><code>let indiceTres = numeros.indexOf(3); // 2</code></pre>
+                </p>
+
+                <h3>12. splice()</h3>
+                <p>
+                    Añade, elimina o reemplaza elementos dentro de un array.
+                <pre><code>numeros.splice(1, 2, 7, 8); // [0, 7, 8, 4, 5] (Elimina 2 elementos desde el índice 1 y agrega 7 y 8)</code></pre>
+                </p>
+
+                <h3>13. slice()</h3>
+                <p>
+                    Devuelve una copia de una parte del array en un nuevo array, sin modificar el array original.
+                <pre><code>let algunosNumeros = numeros.slice(1, 3); // [7, 8]</code></pre>
+                </p>
+
             </div>
         </section>
     </div>
