@@ -1,7 +1,6 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 10rem);
     padding: 1.25rem;
 }
 
@@ -64,16 +63,13 @@ pre {
     font-size: 1.1rem;
 }
 
-img {
-    height: 3.125rem;
-}
-
 @media (min-width: 650px) {
 
     .main-container {
         display: flex;
         flex-direction: row;
         padding: 0;
+        
     }
 
     .menu-nav {
@@ -90,7 +86,8 @@ img {
     }
 
     .content {
-        margin-left: 1.5rem;
+       margin-left: 1rem;
+       margin-right: 1rem;
     }
 
     .button {
