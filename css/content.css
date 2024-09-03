@@ -52,11 +52,12 @@ h2 {
 
 p {
     font-size: 1.3rem;
+    color: #d2d2d2;
 }
 
 pre {
     background-color: #000;
-    color: #0f0;
+    color: rgb(56, 214, 56);
     padding:  0.625rem;
     border-radius: 0.3125rem;
     overflow-x: auto;
