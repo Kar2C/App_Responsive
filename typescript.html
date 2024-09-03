@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TypeScript - App Híbrida</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/content.css"> 
+    <link rel="stylesheet" href="css/content.css">
 </head>
 
 <body class="body">
@@ -37,7 +37,8 @@
 
                 <h3>1. Punto y coma (;)</h3>
                 <p>
-                    <b>Uso:</b> En TypeScript, el punto y coma es opcional al final de una declaración, pero se recomienda
+                    <b>Uso:</b> En TypeScript, el punto y coma es opcional al final de una declaración, pero se
+                    recomienda
                     usarlo para evitar errores inesperados.
                 <pre><code>let nombre: string = "Juan";</code></pre>
                 </p>
@@ -50,7 +51,7 @@
 
                 <h3>3. Declaración de Variables (let, const, var) </h3>
                 <p>
-                   <b>Uso:</b> let y const son las formas modernas de declarar variables. let permite cambiar el valor,
+                    <b>Uso:</b> let y const son las formas modernas de declarar variables. let permite cambiar el valor,
                     mientras
                     que const define una constante.
                 <pre><code>let nombre: string = "Ana";<br>const pi: number = 3.1416;</code></pre>
@@ -70,7 +71,8 @@
 
                 <h3>6. Clases (class) y Modificadores de Acceso</h3>
                 <p>
-                    <b>Uso:</b> class se usa para definir clases, y puedes usar modificadores como public, private, y protected
+                    <b>Uso:</b> class se usa para definir clases, y puedes usar modificadores como public, private, y
+                    protected
                     para controlar la visibilidad de los miembros de la clase
                 <pre><code>class Persona {<br>   private nombre: string;<br>   edad: number;<br><br>   constructor(nombre: string, edad: number) {<br>   this.nombre = nombre;<br>   } <br><br>   public saludar(): string {<br>   return Hola, mi nombre es ${this.nombre};<br>   } <br>}</code></pre>
                 </p>
@@ -89,7 +91,7 @@
 
                 <h3>9. Tipos de Unión (Union Types)</h3>
                 <p>
-                   <b>Uso:</b> Permiten que una variable pueda contener valores de diferentes tipos.
+                    <b>Uso:</b> Permiten que una variable pueda contener valores de diferentes tipos.
                 <pre><code>let value: string | number;<br>value = "Hello";<br>value = 42;</code></pre>
                 </p>
 
@@ -291,7 +293,7 @@
             </div>
 
             <div class="content-box">
-                <h2>Metodos</h2>
+                <h2>Métodos</h2>
                 <p>
                     TypeScript ofrece una amplia gama de métodos para manipular y trabajar con arrays. A continuación,
                     se presentan algunos de los métodos más comunes:
@@ -341,7 +343,8 @@
 
                 <h3>8. reduce()</h3>
                 <p>
-                    Devuelve el primer elemento del array que cumpla una condición.
+                    Reduce el array a un solo valor según la función que se le pase. El método reduce() suma todos los
+                    elementos del array, comenzando desde 0, y devuelve la suma total.
                 <pre><code>let sumaTotal = numeros.reduce((acumulador, numero) => acumulador + numero, 0); // 14</code></pre>
                 </p>
 
